@@ -1,0 +1,53 @@
+.output-container {
+    display: flex;
+    flex-wrap: wrap; /* Позволяет переносить карточки на следующую строку, если не хватает места */
+    justify-content: center; /* Центровка карточек по горизонтали */
+    gap: 20px; /* Расстояние между карточками */
+    padding: 20px;
+    background-color: #f9f9f9;
+}
+
+
+ .character-card {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    width: 200px; /* Фиксированная ширина карточек для отображения в ряд */
+     text-align: center;
+    transition: transform 0.3s ease;
+} 
+
+.character-card img {
+    border-radius: 8px;
+    max-width: 100%;
+    height: auto;
+}
+
+.character-card h3 {
+    margin-top: 10px;
+    font-size: 20px;
+    color: #333;
+}
+
+.character-card button {
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.character-card button:hover {
+    background-color: #0056b3;
+}
+
+.server-error {
+    text-align: center;
+    font-size: 24px;
+    color: red;
+    padding: 50px;
+} 
